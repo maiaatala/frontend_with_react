@@ -1,52 +1,17 @@
-import React from "react"; //i need this to use the const shit
+// import React from "react"; //i need this to use the const stuff
 import ReactDOM from "react-dom"; //need the -dom
 
-//stateles functional compoenent
-//always return jsx
-// function Greeting() {
-//     //need to start with uppercase ?!?! -YES
-//     return <h4>first component wooo</h4>;
-// }
+// import Nested from "./02nestedComponents"; //in here needs to be capitalized...
+// ReactDOM.render(<Nested />, document.getElementById("root"));
 
-// const Greeting = () => {
-//     return React.createElement("h1", {}, "hello world");
-// };
+// import BookList from "./03miniBook";
+// ReactDOM.render(<BookList />, document.getElementById("root"));
 
-// function Greeting() {
-//     return (
-//         //ONLY ONE PARENT ELEMENT
-//         <div>
-//             <h1>Hello World</h1>
-//             <h4>hello darkness my old friend</h4>
-//         </div>
-//     );
-// }
+// import BookList from "./04miniBookJSX";
+// ReactDOM.render(<BookList />, document.getElementById("root"));
 
-function Greeting() {
-    return (
-        //must have enclosing stuff
-        <React.Fragment>
-            <div>
-                <h1>Hello darkness my old friend</h1>
-            </div>
-            <article>
-                <h3>I came to talk with you again</h3>
-                <ul>
-                    <li>
-                        <a href="#">something else in genius</a>
-                    </li>
-                </ul>
-            </article>
-        </React.Fragment>
-    );
-}
+// import BookList from "./05miniBookProps";
+// ReactDOM.render(<BookList />, document.getElementById("root"));
 
-// const Greeting = () => {
-//     return React.createElement(
-//         "div",
-//         {},
-//         React.createElement("h1", {}, "hello World")
-//     );
-// };
-
-ReactDOM.render(<Greeting />, document.getElementById("root"));
+import BookList from "./06miniBookList";
+ReactDOM.render(<BookList />, document.getElementById("root"));

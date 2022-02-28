@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: rgb(241, 245, 248);
+    color: #222;
+}
+/* 
+h1 {
+    color: red;
+} */
+
+.booklist {
+    width: 90vw;
+    max-width: fit-content;
+    min-width: 350px;
+    margin: 2rem; /*auto is what makes this move, like its always trying to be at the center*/
+    display: grid;
+    gap: 2rem;
+    /* border: black;
+    border-style: solid; */
+}
+
+@media screen and (min-width: 890px) {
+    .booklist {
+        grid-template-columns: repeat(2, 1fr);
+        /* max-width: fit-content; */
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    /* max-width * 3  */
+    .booklist {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.image {
+    /* clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); */
+    border-radius: 50px;
+    max-width: 350px;
+    /* max-height: 300px; */
+}
+
+.book {
+    background: white;
+    /* border-radius: 2rem; */
+    border-style: solid;
+    border-width: thin;
+    border-color: gray;
+    padding: 1rem 1.5rem;
+    max-width: fit-content;
+}
+
+.book h1 {
+    margin-top: 0.5rem;
+}

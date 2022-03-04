@@ -13,5 +13,7 @@ import ReactDOM from "react-dom"; //need the -dom
 // import BookList from "./05miniBookProps";
 // ReactDOM.render(<BookList />, document.getElementById("root"));
 
-import BookList from "./06miniBookList";
-ReactDOM.render(<BookList />, document.getElementById("root"));
+import Project from "./06miniBookList";
+ReactDOM.render(<Project />, document.getElementById("root"));
+// * we dont need to match the name since we exported default
+// ! needs to be uppercase tho

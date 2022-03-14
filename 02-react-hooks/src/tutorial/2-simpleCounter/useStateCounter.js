@@ -23,7 +23,7 @@ const UseStateCounter = () => {
     <>
       <section style={{ margin: "4rem 0" }}>
         <h2>regular counter</h2>
-        <h1>{value}</h1>
+        <h1 style={{ marginTop: "0" }}>{value}</h1>
         <button className="btn" onClick={() => setValue(value - 1)}>
           decrease
         </button>
@@ -36,7 +36,7 @@ const UseStateCounter = () => {
       </section>
       <section style={{ margin: "4rem 0" }}>
         <h2>More complex counter</h2>
-        <h1>{value}</h1>
+        <h1 style={{ marginTop: "0" }}>{value}</h1>
         <button className="btn" onClick={complexIncrease}>
           increase later
         </button>

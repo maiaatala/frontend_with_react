@@ -21,7 +21,7 @@ export default function Data() {
 
   return (
     <>
-      <h2>Github Users</h2>
+      <h1>Github Users</h1>
       <ul className="users">
         {users.map((user) => {
           const { id, login, avatar_url, html_url } = user;

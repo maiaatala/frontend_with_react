@@ -64,6 +64,7 @@ ul {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 h1,
 h2,
@@ -77,6 +78,7 @@ h4 {
 }
 h1 {
   font-size: 3rem;
+  margin-top: 4rem;
 }
 h2 {
   font-size: 2rem;
@@ -120,6 +122,37 @@ p {
 Global Classes
 ===============
 */
+
+.MainNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start;
+  gap: 10px 30px;
+  /* min-height: 6vh; */
+  background: var(--background02);
+  padding: 0.5rem 0;
+}
+
+.MainNav a {
+  color: var(--Orange);
+  /* line-height: bold; */
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+.MainNav a:hover {
+  color: var(--Orange);
+  background: radial-gradient(
+    closest-side,
+    var(--background),
+    var(--background02)
+  );
+  /* background: rgb(40, 42, 54, 0.5); */
+}
+
 .section,
 .container {
   width: 90vw;
@@ -137,7 +170,7 @@ Global Classes
 
 .container {
   text-align: center;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 
 .btn {
@@ -192,7 +225,7 @@ Global Classes
   text-transform: capitalize;
 }
 
-/* .item {
+.item {
   background-color: var(--background02);
   display: flex;
   justify-content: space-between;
@@ -212,7 +245,7 @@ Global Classes
 .item h4,
 .item p {
   margin-bottom: 0;
-} */
+}
 
 /* .modal {
   position: absolute;

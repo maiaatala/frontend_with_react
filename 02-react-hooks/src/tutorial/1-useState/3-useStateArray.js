@@ -22,7 +22,15 @@ const UseStateArray = () => {
         return (
           <div key={id} className="item">
             <h4>{name}</h4>
-            <button onClick={() => removeItem(id)}>remove</button>
+            <button
+              onClick={() => removeItem(id)}
+              style={{
+                borderColor: "transparent",
+                backgroundColor: "var(--background)",
+              }}
+            >
+              remove
+            </button>
           </div>
         );
       })}

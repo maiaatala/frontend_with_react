@@ -9,6 +9,7 @@ import UseEB from "./tutorial/3-useEffect/1-basics";
 import UseEClean from "./tutorial/3-useEffect/2-cleanupFunction";
 import UseEData from "./tutorial/3-useEffect/3-fetchData";
 import MultiR from "./tutorial/4-conditionalRendering/1-multipleReturns";
+import ShortC from "./tutorial/4-conditionalRendering/2-shorCircuit";
 
 export default function App() {
   return (
@@ -69,6 +70,7 @@ const ConditionalRendering = () => {
   return (
     <div className="container">
       <MultiR />
+      <ShortC />
     </div>
   );
 };

@@ -8,8 +8,9 @@ import Counter from "./tutorial/2-simpleCounter/useStateCounter";
 import UseEB from "./tutorial/3-useEffect/1-basics";
 import UseEClean from "./tutorial/3-useEffect/2-cleanupFunction";
 import UseEData from "./tutorial/3-useEffect/3-fetchData";
+import MultiR from "./tutorial/4-conditionalRendering/1-multipleReturns";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <nav className="MainNav">
@@ -17,6 +18,7 @@ function App() {
         <Link to="/useState">useState</Link>
         <Link to="/counter">Counter</Link>
         <Link to="/useEffect">useEffect</Link>
+        <Link to="/conditionalRendering">Cond. Rendering</Link>
       </nav>
       <Routes>
         <Route
@@ -37,6 +39,10 @@ function App() {
           }
         />
         <Route path="/useEffect" element={<UseEffect />} />
+        <Route
+          path="/conditionalRendering"
+          element={<ConditionalRendering />}
+        />
       </Routes>
     </Router>
   );
@@ -59,4 +65,10 @@ const UseEffect = () => {
   );
 };
 
-export default App;
+const ConditionalRendering = () => {
+  return (
+    <div className="container">
+      <MultiR />
+    </div>
+  );
+};

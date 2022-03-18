@@ -10,6 +10,7 @@ import UseEClean from "./tutorial/3-useEffect/2-cleanupFunction";
 import UseEData from "./tutorial/3-useEffect/3-fetchData";
 import MultiR from "./tutorial/4-conditionalRendering/1-multipleReturns";
 import ShortC from "./tutorial/4-conditionalRendering/2-shorCircuit";
+import Forms from "./tutorial/5-Forms/1-forms";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Link to="/counter">Counter</Link>
         <Link to="/useEffect">useEffect</Link>
         <Link to="/conditionalRendering">Cond. Rendering</Link>
+        <Link to="/Forms">Forms</Link>
       </nav>
       <Routes>
         <Route
@@ -44,6 +46,7 @@ export default function App() {
           path="/conditionalRendering"
           element={<ConditionalRendering />}
         />
+        <Route path="/Forms" element={<FormsT />} />
       </Routes>
     </Router>
   );
@@ -71,6 +74,14 @@ const ConditionalRendering = () => {
     <div className="container">
       <MultiR />
       <ShortC />
+    </div>
+  );
+};
+
+const FormsT = () => {
+  return (
+    <div className="container">
+      <Forms />
     </div>
   );
 };

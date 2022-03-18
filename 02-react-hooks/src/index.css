@@ -261,13 +261,16 @@ Global Classes
 .item button,
 .item a {
   background: transparent;
-  color: var(--Green);
+  color: var(--foreground);
   letter-spacing: var(--spacing);
   cursor: pointer;
 }
 .item h4,
 .item p {
   margin-bottom: 0;
+}
+.item p {
+  color: var(--comment);
 }
 
 .Forms {
@@ -276,6 +279,9 @@ Global Classes
   align-items: center;
   max-width: var(--max-width);
   justify-content: center;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
 }
 
 .Forms input {
@@ -283,6 +289,41 @@ Global Classes
   padding: 0.25rem 0.75rem;
   font-size: medium;
   max-width: 300px;
+  border-radius: var(--radius);
+}
+
+.FForms {
+  background: var(--background02);
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+}
+
+.FForms input {
+  background: var(--foreground);
+  border-radius: var(--radius);
+  padding: 0.25rem 0.5rem;
+}
+.FForms-control {
+  margin: 0.5rem 0;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+}
+
+.FForms button {
+  display: inline-block;
+  background: var(--background);
+  color: var(--clr-white);
+  /* border-color: transparent; */
+  margin-top: 1rem;
+  letter-spacing: var(--spacing);
+  padding: 0.15rem 0.25rem;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  cursor: pointer;
 }
 
 /* .modal {

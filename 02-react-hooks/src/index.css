@@ -156,13 +156,13 @@ Global Classes
   gap: 10px 30px;
   /* min-height: 6vh; */
   background: var(--background02);
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem;
 }
 
 .MainNav a {
   color: var(--Orange);
   /* line-height: bold; */
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 900;
 }
 

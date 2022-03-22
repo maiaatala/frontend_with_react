@@ -11,6 +11,7 @@ import UseEData from "./tutorial/3-useEffect/3-fetchData";
 import MultiR from "./tutorial/4-conditionalRendering/1-multipleReturns";
 import ShortC from "./tutorial/4-conditionalRendering/2-shorCircuit";
 import Forms from "./tutorial/5-Forms/1-forms";
+import UseRef from "./tutorial/6-useRef/1-useRefBasics";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Link to="/useEffect">useEffect</Link>
         <Link to="/conditionalRendering">Cond. Rendering</Link>
         <Link to="/Forms">Forms</Link>
+        <Link to="/useRef">useRef</Link>
       </nav>
       <Routes>
         <Route
@@ -47,6 +49,14 @@ export default function App() {
           element={<ConditionalRendering />}
         />
         <Route path="/Forms" element={<FormsT />} />
+        <Route
+          path="/useRef"
+          element={
+            <div className="container">
+              <UseRef />
+            </div>
+          }
+        />
       </Routes>
     </Router>
   );

@@ -12,6 +12,7 @@ import MultiR from "./tutorial/4-conditionalRendering/1-multipleReturns";
 import ShortC from "./tutorial/4-conditionalRendering/2-shorCircuit";
 import Forms from "./tutorial/5-Forms/1-forms";
 import UseRef from "./tutorial/6-useRef/1-useRefBasics";
+import UseReducer from "./tutorial/7-useReducer/";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Link to="/conditionalRendering">Cond. Rendering</Link>
         <Link to="/Forms">Forms</Link>
         <Link to="/useRef">useRef</Link>
+        <Link to="/useReducer">useReducer</Link>
       </nav>
       <Routes>
         <Route
@@ -54,6 +56,14 @@ export default function App() {
           element={
             <div className="container">
               <UseRef />
+            </div>
+          }
+        />
+        <Route
+          path="/useReducer"
+          element={
+            <div className="container">
+              <UseReducer />
             </div>
           }
         />

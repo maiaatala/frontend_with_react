@@ -149,7 +149,7 @@ Global Classes
 .MainNav {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
   align-items: center;
   align-content: flex-start;
@@ -157,6 +157,8 @@ Global Classes
   /* min-height: 6vh; */
   background: var(--background02);
   padding: 0.5rem 2rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .MainNav a {

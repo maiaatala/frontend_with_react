@@ -13,6 +13,7 @@ import ShortC from "./tutorial/4-conditionalRendering/2-shorCircuit";
 import Forms from "./tutorial/5-Forms/1-forms";
 import UseRef from "./tutorial/6-useRef/1-useRefBasics";
 import UseReducer from "./tutorial/7-useReducer/";
+import UseContext from "./tutorial/9-useContext/1-context-api";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Link to="/Forms">Forms</Link>
         <Link to="/useRef">useRef</Link>
         <Link to="/useReducer">useReducer</Link>
+        <Link to="/useContext">useContext</Link>
       </nav>
       <Routes>
         <Route
@@ -64,6 +66,14 @@ export default function App() {
           element={
             <div className="container">
               <UseReducer />
+            </div>
+          }
+        />
+        <Route
+          path="/useContext"
+          element={
+            <div className="container">
+              <UseContext />
             </div>
           }
         />

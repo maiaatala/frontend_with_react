@@ -5,7 +5,7 @@ Variables
 */
 
 :root {
-  --background: #282a36;
+  --background: rgb(40, 42, 54);
   --background02: #44475a;
   --foreground: #f8f8f2;
   --comment: #6272a4;
@@ -157,8 +157,17 @@ Global Classes
   /* min-height: 6vh; */
   background: var(--background02);
   padding: 0.5rem 2rem;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
   overflow-y: hidden;
+
+  /* overflow-x: hidden;
+  width: 80vw;
+  margin: 20px;
+  border-radius: 10%;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -10px 20px rgba(40, 42, 54, 1);
+  z-index: 10; */
 }
 
 .MainNav a {
@@ -176,6 +185,14 @@ Global Classes
     var(--background02)
   );
   /* background: rgb(40, 42, 54, 0.5); */
+}
+
+.fade {
+  position: fixed;
+  bottom: 0;
+  height: 130px;
+  width: 100vw;
+  background-image: linear-gradient(0deg, var(--background) 80%, transparent);
 }
 
 .section,
@@ -327,23 +344,25 @@ Global Classes
   border-radius: var(--radius);
   cursor: pointer;
 }
-
-/* .modal {
+.modal {
   position: absolute;
-  top: 2rem;
+  margin: 0 auto;
+  top: 202px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--clr-white);
   display: inline-block;
   padding: 0.25rem 1rem;
   border-radius: var(--radius);
   text-transform: capitalize;
 }
-
-.modal p {
+.modal h4 {
   margin-bottom: 0;
-  color: var(--clr-red-dark);
+  color: var(--Orange);
 }
+
+/* 
+
+
 .form {
   background: var(--clr-white);
   max-width: var(--fixed-width);

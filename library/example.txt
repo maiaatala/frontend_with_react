@@ -1,0 +1,181 @@
+Categories_Get= [
+  {
+    "id": 1,
+    "name": "Programming",
+    "categories_books": [
+      {
+        "book": {
+          "title": "Think Python",
+          "subtitle": "How to Think Like a Computer Scientist",
+          "publish_date": "2015-12-02",
+          "author": {
+            "name": "Allen Downey "
+          }
+        }
+      },
+      {
+        "book": {
+          "title": "Python Data Science Handbook",
+          "subtitle": "Essential Tools for Working with Data",
+          "publish_date": "2016-11-21",
+          "author": {
+            "name": "Jake VanderPlas"
+          }
+        }
+      },
+      {
+        "book": {
+          "title": "Think Java",
+          "subtitle": "How to Think Like a Computer Scientist",
+          "publish_date": "2015-12-06",
+          "author": {
+            "name": "Allen Downey "
+          }
+        }
+      }
+    ],
+    "created": "2021-12-03T20:21:20.756150",
+    "updated": null
+  },
+  {
+    "id": 3,
+    "name": "Algorithms",
+    "categories_books": [
+      {
+        "book": {
+          "title": "Grokking Algorithms",
+          "subtitle": "An Illustrated Guide for Programmers and Other Curious People",
+          "publish_date": "2016-03-12",
+          "author": {
+            "name": "Aditya Bhargava"
+          }
+        }
+      }
+    ],
+    "created": "2021-12-03T21:38:42.397072",
+    "updated": null
+  },
+  {
+    "id": 4,
+    "name": "Data Science",
+    "categories_books": [
+      {
+        "book": {
+          "title": "Grokking Algorithms",
+          "subtitle": "An Illustrated Guide for Programmers and Other Curious People",
+          "publish_date": "2016-03-12",
+          "author": {
+            "name": "Aditya Bhargava"
+          }
+        }
+      },
+      {
+        "book": {
+          "title": "Think Stats",
+          "subtitle": "Exploratory Data Analysis",
+          "publish_date": "2014-10-16",
+          "author": {
+            "name": "Allen Downey "
+          }
+        }
+      },
+      {
+        "book": {
+          "title": "Python Data Science Handbook",
+          "subtitle": "Essential Tools for Working with Data",
+          "publish_date": "2016-11-21",
+          "author": {
+            "name": "Jake VanderPlas"
+          }
+        }
+      }
+    ],
+    "created": "2021-12-03T21:38:47.584247",
+    "updated": null
+  },
+  {
+    "id": 5,
+    "name": "Mathematics",
+    "categories_books": [
+      {
+        "book": {
+          "title": "Think Stats",
+          "subtitle": "Exploratory Data Analysis",
+          "publish_date": "2014-10-16",
+          "author": {
+            "name": "Allen Downey "
+          }
+        }
+      },
+      {
+        "book": {
+          "title": "Calculus",
+          "subtitle": null,
+          "publish_date": "2015-05-07",
+          "author": {
+            "name": "James Stewart"
+          }
+        }
+      }
+    ],
+    "created": "2021-12-03T22:15:35.073506",
+    "updated": null
+  },
+  {
+    "id": 6,
+    "name": "Computer Science",
+    "categories_books": [
+      {
+        "book": {
+          "title": "Think Python",
+          "subtitle": "How to Think Like a Computer Scientist",
+          "publish_date": "2015-12-02",
+          "author": {
+            "name": "Allen Downey "
+          }
+        }
+      },
+      {
+        "book": {
+          "title": "Python Data Science Handbook",
+          "subtitle": "Essential Tools for Working with Data",
+          "publish_date": "2016-11-21",
+          "author": {
+            "name": "Jake VanderPlas"
+          }
+        }
+      },
+      {
+        "book": {
+          "title": "Think Java",
+          "subtitle": "How to Think Like a Computer Scientist",
+          "publish_date": "2015-12-06",
+          "author": {
+            "name": "Allen Downey "
+          }
+        }
+      }
+    ],
+    "created": "2021-12-03T22:15:47.390620",
+    "updated": null
+  },
+  {
+    "id": 7,
+    "name": "Statistic",
+    "categories_books": [
+      {
+        "book": {
+          "title": "Think Stats",
+          "subtitle": "Exploratory Data Analysis",
+          "publish_date": "2014-10-16",
+          "author": {
+            "name": "Allen Downey "
+          }
+        }
+      }
+    ],
+    "created": "2021-12-03T22:16:48.738799",
+    "updated": null
+  }
+]
+

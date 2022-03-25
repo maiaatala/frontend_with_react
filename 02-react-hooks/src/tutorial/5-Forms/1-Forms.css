@@ -227,6 +227,9 @@ people List
   border-radius: var(--radius);
   text-transform: capitalize;
 }
+.people-item:nth-of-type(even) {
+  background: var(--comment);
+}
 .people-item:hover {
   background: var(--background);
   color: var(--foreground);

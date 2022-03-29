@@ -28,6 +28,9 @@ const Navbar = () => {
       >
         Products
       </NavLink>
+      <NavLink to="/login" style={handleStyle}>
+        Login
+      </NavLink>
     </nav>
   );
 };

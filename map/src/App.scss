@@ -1,0 +1,35 @@
+body {
+  background-color: antiquewhite;
+  /* background-color: rgb(197, 197, 197); */
+  /* background-color: rgb(177, 176, 176); */
+  margin: 0;
+  padding: 0;
+  .map {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: inherit;
+      height: inherit;
+      // height: 300%;
+      // width: 300%;
+      path:hover {
+        fill: red !important;
+      }
+    }
+
+    // .Brazilian_States_svg__str0 {
+    //   svg path:hover {
+    //     fill: red !important;
+    //   }
+    // }
+    // #Brazilian_States_svg__path56::hover {
+    //   color: red;
+    // }
+  }
+  // map::after {
+  //   color: red;
+  // }
+}

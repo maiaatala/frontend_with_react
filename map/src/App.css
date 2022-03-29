@@ -1,0 +1,30 @@
+body {
+  background-color: antiquewhite;
+  /* background-color: rgb(197, 197, 197); */
+  /* background-color: rgb(177, 176, 176); */
+  margin: 0;
+  padding: 0;
+}
+
+body .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .map svg {
+  width: inherit;
+  height: inherit;
+}
+
+body .map svg path:hover {
+  fill: red !important;
+}
+/*# sourceMappingURL=App.css.map */

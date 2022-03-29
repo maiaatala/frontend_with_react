@@ -183,7 +183,7 @@ Stripe Styles
   height: 65%;
   top: 0;
   left: 0;
-  background: url(./images/hero.svg);
+  background: url("./images/hero.svg");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -255,7 +255,7 @@ Stripe Styles
 }
 
 /* hero media query */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .hero::before {
     background-size: contain;
     height: 100%;

@@ -1,9 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+// import { AppProvider } from "./03-sidebarModal/context";
+// import { AppProvider } from "./04-stripeMenus/context";
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* <AppProvider>
+      <App />
+    </AppProvider> */}
     <App />
   </React.StrictMode>,
   document.getElementById("root")

@@ -1,13 +1,17 @@
 // import Birthday from "./01-birthday/birthday";
 // import Navbar from "./02-navbar/navbar";
-import Stripe from "./03-stripeMenus";
+// import SideBarM from "./03-sidebarModal";
+// import Stripe from "./04-stripeMenus";
+import RouterT from "./05-router";
 
 function App() {
   return (
     <>
       {/* <Birthday /> */}
       {/* <Navbar /> */}
-      <Stripe />
+      {/* <SideBarM /> */}
+      {/* <Stripe /> */}
+      <RouterT />
     </>
   );
 }

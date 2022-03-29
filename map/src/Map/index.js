@@ -1,6 +1,8 @@
 import React from "react";
 import SvgBrazilianStates from "./SVG/BrazilianStates";
 import SvgBulletsWeaponsSvgrepoCom from "./SVG/BulletsWeaponsSvgrepoCom";
+import SvgBrazilMatoGrossoLocationMap from "./SVG/BrazilMatoGrossoLocationMap";
+// ! npx @svgr/cli src/Map/SVG --out-dir scr/Map --icon
 
 const MapApp = () => {
   // const container = useRef
@@ -29,7 +31,8 @@ const MapApp = () => {
   return (
     <>
       <div className="map">
-        <SvgBrazilianStates onClick={handleClick} />;
+        <SvgBrazilianStates onClick={handleClick} />
+        {/* <SvgBrazilMatoGrossoLocationMap /> */}
         {/* <SvgBulletsWeaponsSvgrepoCom /> */}
       </div>
       <div className="bullets"></div>

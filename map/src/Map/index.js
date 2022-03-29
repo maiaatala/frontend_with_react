@@ -2,7 +2,7 @@ import React from "react";
 import SvgBrazilianStates from "./SVG/BrazilianStates";
 import SvgBulletsWeaponsSvgrepoCom from "./SVG/BulletsWeaponsSvgrepoCom";
 import SvgBrazilMatoGrossoLocationMap from "./SVG/BrazilMatoGrossoLocationMap";
-// ! npx @svgr/cli src/Map/SVG --out-dir scr/Map --icon
+// ! npx @svgr/cli src/Map/SVG --out-dir src/Map --icon
 
 const MapApp = () => {
   // const container = useRef

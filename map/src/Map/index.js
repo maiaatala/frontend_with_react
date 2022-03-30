@@ -1,16 +1,22 @@
 import React from "react";
-import SvgBrazilianStates from "./SVG/BrazilianStates";
-import SvgBulletsWeaponsSvgrepoCom from "./SVG/BulletsWeaponsSvgrepoCom";
-import SvgBrazilMatoGrossoLocationMap from "./SVG/BrazilMatoGrossoLocationMap";
-// ! npx @svgr/cli src/Map/SVG --out-dir src/Map --icon
+// import SvgBrazilianStates from "./SVG/BrazilianStates";
+import { Brasil } from "./SVG";
+// import SvgBulletsWeaponsSvgrepoCom from "./SVG/BulletsWeaponsSvgrepoCom";
+// import SvgBrazilMatoGrossoLocationMap from "./SVG/BrazilMatoGrossoLocationMap";
+// ! npx @svgr/cli src/Map/SVG --out-dir src/Map/SVG --icon
 
 const MapApp = () => {
   // const container = useRef
 
   const handleClick = (e) => {
-    // console.log(e.target.id);
+    console.log(e.target.id);
+    // console.log(e.target.classList.value);
     // console.log(e.target.id === "Brazilian_States_svg__path56");
-    if (e.target.id === "Brazilian_States_svg__path56") {
+
+    if (e.target.id.includes("mato_grosso")) {
+    }
+
+    /* if (e.target.id === "Brazilian_States_svg__path56") {
       window.open("https://en.wikipedia.org/wiki/Mato_Grosso", "_blank");
     } else if (e.target.id === "Brazilian_States_svg__path80") {
       window.open(
@@ -24,14 +30,14 @@ const MapApp = () => {
     } else if (e.target.id === "Brazilian_States_svg__path60") {
       window.open("https://en.wikipedia.org/wiki/Mato_Grosso_do_Sul", "_blank");
     } else {
-      console.log("mope");
-    }
+      // console.log("mope");
+    } */
   };
 
   return (
     <>
       <div className="map">
-        <SvgBrazilianStates onClick={handleClick} />
+        <Brasil onClick={handleClick} />
         {/* <SvgBrazilMatoGrossoLocationMap /> */}
         {/* <SvgBulletsWeaponsSvgrepoCom /> */}
       </div>

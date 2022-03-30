@@ -28,7 +28,11 @@ body .map svg {
   height: inherit;
 }
 
+body .map svg path {
+  fill: #b3b3b3 !important;
+}
+
 body .map svg path:hover {
-  fill: red !important;
+  fill: #535151 !important;
 }
 /*# sourceMappingURL=App.css.map */

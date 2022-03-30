@@ -14,11 +14,17 @@ body {
     svg {
       width: inherit;
       height: inherit;
+      path {
+        fill: rgb(179, 179, 179) !important;
+      }
       // height: 300%;
       // width: 300%;
       path:hover {
-        fill: red !important;
+        fill: rgb(83, 81, 81) !important;
       }
+      // #brasil_svg__mato_grosso:hover {
+      //   fill: url("https://image.winudf.com/v2/image1/Y29tLmZpcmV3aGVlbC5ibGFja3NjcmVlbl9zY3JlZW5fMF8xNTgyNjgwMjgzXzA2MQ/screen-0.jpg?h=500&fakeurl=1&type=.jpg") !important;
+      // }
     }
 
     // .Brazilian_States_svg__str0 {

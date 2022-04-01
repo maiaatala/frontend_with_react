@@ -1,15 +1,35 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
+$background: #d9d9d9;
+$foreground: #ffffff;
+$backgroundDark: #747474;
+$backgroundLight: #ededed;
+$textcolor: black;
+$green: #009933;
+$greenMuted: rgba(0, 153, 53, 0.1);
+$textMuted: #828282;
+$maxWidth: 1060px;
+$minWidth: 480px;
+$bar1Height: 30px;
+$bar1Icons: 25px;
+$bar2Height: 60px;
+$bar2Icons: 47px;
+$bookLHeight: 200px;
+// $defaultMargin: 20px;
+$defaultMargin: 1.25rem;
+$defaultRadius: 10px;
 
 @mixin Flextemplate {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  max-width: $maxWidth;
   align-items: center;
+  margin: 0 auto;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -17,17 +37,22 @@ html {
 } /*16px*/
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  background: $background;
+  color: black;
+  line-height: 1.5;
+  font-size: 14px;
   /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
-  padding: 0;
+  // text-transform: capitalize;
 }
 
 a {
   text-decoration: none;
+  color: $textcolor;
+  cursor: pointer;
 }
 ul {
   list-style-type: none;
@@ -38,44 +63,177 @@ li {
   padding: 0;
   margin: 0;
 }
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  // margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+button,
+select {
+  cursor: pointer;
+}
+
+.aboutBar {
+  @include Flextemplate();
+  justify-content: space-between;
+  background-color: $backgroundDark;
+  height: $bar1Height;
+  padding: 0 $defaultMargin/2;
+  min-width: 460px;
+
+  .gitHubLink {
+    display: flex;
+    align-items: center;
+    gap: $defaultMargin/2;
+
+    p {
+      margin-bottom: 2px;
+      color: $foreground;
+    }
+  }
+
+  svg {
+    // width: 100%;
+    height: 20px;
+    width: auto;
+  }
+}
+
+.mainHeader {
+  @include Flextemplate();
+  justify-content: space-between;
+  gap: 10px;
+  height: $bar2Height;
+  padding: 0 $defaultMargin/2;
+
+  #logo {
+    height: auto;
+    width: 76px;
+    // height: 47px;
+    // width: auto;
+  }
+
+  p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .searchMenu {
+    display: flex;
+    min-width: 200px;
+    max-width: 420px;
+    align-items: center;
+    height: 35px;
+
+    .selectionBox {
+      height: inherit;
+      min-width: 60px;
+
+      select {
+        display: block;
+        height: inherit;
+        border: 0;
+        border-radius: $defaultRadius 0 0 $defaultRadius;
+        background: $backgroundLight;
+        padding-left: 5px;
+        font-size: 14px;
+        min-width: inherit;
+      }
+    }
+
+    input {
+      height: inherit;
+      width: 293px;
+      min-width: 100px;
+      border: 0;
+    }
+
+    button {
+      height: inherit;
+      width: 35px;
+      background: $foreground;
+      border: 0;
+      border-radius: 0 $defaultRadius $defaultRadius 0;
+
+      svg {
+        height: 17px;
+        width: 17px;
+      }
+    }
+  }
+}
 
 .mainPage {
-  max-width: 400px;
+  min-width: $minWidth;
+  max-width: $maxWidth;
   margin: 0 auto;
-  margin-top: 4rem;
+  padding-top: $defaultMargin/2;
+  background-color: $foreground;
+  border-radius: $defaultRadius $defaultRadius 0 0;
 
-  .searchBox {
-    @include Flextemplate();
-    margin-bottom: 3rem;
-    .filter {
-      @include Flextemplate();
-      width: 400px;
-      justify-content: flex-end;
-      gap: 20px;
-      flex-direction: row;
-      margin-bottom: 0.25rem;
-    }
-
-    .form {
-      width: 400px;
-      // min-width: 300px;
-      padding: 0.375rem 0.75rem;
-      border: 1px solid black;
-    }
+  .listFragment:nth-child(even) {
+    background-color: $greenMuted;
   }
 
-  .tags {
+  .listFragment {
+    display: block;
     max-width: inherit;
-    @include Flextemplate();
-    align-content: space-between;
-
-    gap: 30px;
-    // margin: 0 auto;
-    // margin-top: 4rem;
+    min-width: inherit;
+    // margin: $defaultMargin;
+    padding: $defaultMargin/2 $defaultMargin;
 
     h3 {
-      padding: 0;
-      margin: 0;
+      font-weight: 400;
+    }
+
+    .categorySlider {
+      @include Flextemplate();
+      justify-content: space-between;
+
+      .sliderBtn {
+        background-color: transparent;
+        border: 0;
+
+        svg {
+          height: 22px;
+          width: auto;
+        }
+      }
+
+      .booksSliderList {
+        @include Flextemplate();
+        padding: 0 $defaultMargin;
+        flex-grow: 1;
+        justify-items: flex-start;
+        flex-direction: row;
+        gap: $defaultMargin;
+        overflow: hidden;
+      }
     }
   }
+}
+
+.booksImg {
+  height: 200px;
+  max-width: 200px;
 }

@@ -1,6 +1,8 @@
 *,
 ::after,
 ::before {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -11,15 +13,19 @@ html {
 
 /*16px*/
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background: #d9d9d9;
+  color: black;
+  line-height: 1.5;
+  font-size: 14px;
   /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
-  padding: 0;
 }
 
 a {
   text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
 ul {
@@ -33,86 +39,226 @@ li {
   margin: 0;
 }
 
-.mainPage {
-  max-width: 400px;
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  color: var(--clr-grey-5);
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+.aboutBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1060px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
-  margin-top: 4rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #747474;
+  height: 30px;
+  padding: 0 0.625rem;
+  min-width: 460px;
 }
 
-.mainPage .searchBox {
+.aboutBar .gitHubLink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3rem;
+  gap: 0.625rem;
 }
 
-.mainPage .searchBox .filter {
+.aboutBar .gitHubLink p {
+  margin-bottom: 2px;
+  color: #ffffff;
+}
+
+.aboutBar svg {
+  height: 20px;
+  width: auto;
+}
+
+.mainHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  max-width: 1060px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 400px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  gap: 20px;
-  flex-direction: row;
-  margin-bottom: 0.25rem;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  height: 60px;
+  padding: 0 0.625rem;
 }
 
-.mainPage .searchBox .form {
-  width: 400px;
-  padding: 0.375rem 0.75rem;
-  border: 1px solid black;
+.mainHeader #logo {
+  height: auto;
+  width: 76px;
 }
 
-.mainPage .tags {
+.mainHeader p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.mainHeader .searchMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 200px;
+  max-width: 420px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+}
+
+.mainHeader .searchMenu .selectionBox {
+  height: inherit;
+  min-width: 60px;
+}
+
+.mainHeader .searchMenu .selectionBox select {
+  display: block;
+  height: inherit;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  background: #ededed;
+  padding-left: 5px;
+  font-size: 14px;
+  min-width: inherit;
+}
+
+.mainHeader .searchMenu input {
+  height: inherit;
+  width: 293px;
+  min-width: 100px;
+  border: 0;
+}
+
+.mainHeader .searchMenu button {
+  height: inherit;
+  width: 35px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.mainHeader .searchMenu button svg {
+  height: 17px;
+  width: 17px;
+}
+
+.mainPage {
+  min-width: 480px;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding-top: 0.625rem;
+  background-color: #ffffff;
+  border-radius: 10px 10px 0 0;
+}
+
+.mainPage .listFragment:nth-child(even) {
+  background-color: rgba(0, 153, 53, 0.1);
+}
+
+.mainPage .listFragment {
+  display: block;
   max-width: inherit;
+  min-width: inherit;
+  padding: 0.625rem 1.25rem;
+}
+
+.mainPage .listFragment h3 {
+  font-weight: 400;
+}
+
+.mainPage .listFragment .categorySlider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  max-width: 1060px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainPage .listFragment .categorySlider .sliderBtn {
+  background-color: transparent;
+  border: 0;
+}
+
+.mainPage .listFragment .categorySlider .sliderBtn svg {
+  height: 22px;
+  width: auto;
+}
+
+.mainPage .listFragment .categorySlider .booksSliderList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1060px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  justify-items: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  gap: 30px;
+  gap: 1.25rem;
+  overflow: hidden;
 }
 
-.mainPage .tags h3 {
-  padding: 0;
-  margin: 0;
+.booksImg {
+  height: 200px;
+  max-width: 200px;
 }
 /*# sourceMappingURL=index.css.map */

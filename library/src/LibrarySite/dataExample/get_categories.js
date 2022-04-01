@@ -7,18 +7,24 @@ const data = [
         book: {
           id: 3,
           title: "Think Python",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/61g1K0dERaS.jpg",
         },
       },
       {
         book: {
           id: 6,
           title: "Python Data Science Handbook",
+          photo:
+            "https://kbimages1-a.akamaihd.net/70caf89d-95d8-42b1-ae2d-491e46729278/1200/1200/False/python-data-science-handbook.jpg",
         },
       },
       {
         book: {
           id: 9,
           title: "Think Java",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/81rh4tPZHqL.jpg",
         },
       },
     ],
@@ -33,6 +39,8 @@ const data = [
         book: {
           id: 2,
           title: "Grokking Algorithms",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/81g6X3dWlhL.jpg",
         },
       },
     ],
@@ -47,18 +55,24 @@ const data = [
         book: {
           id: 2,
           title: "Grokking Algorithms",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/81g6X3dWlhL.jpg",
         },
       },
       {
         book: {
           id: 5,
           title: "Think Stats",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/71dSxAe7EjL.jpg",
         },
       },
       {
         book: {
           id: 6,
           title: "Python Data Science Handbook",
+          photo:
+            "https://kbimages1-a.akamaihd.net/70caf89d-95d8-42b1-ae2d-491e46729278/1200/1200/False/python-data-science-handbook.jpg",
         },
       },
     ],
@@ -73,12 +87,16 @@ const data = [
         book: {
           id: 5,
           title: "Think Stats",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/71dSxAe7EjL.jpg",
         },
       },
       {
         book: {
           id: 8,
           title: "Calculus",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/41W3S3Q5JeL.jpg",
         },
       },
     ],
@@ -93,18 +111,24 @@ const data = [
         book: {
           id: 3,
           title: "Think Python",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/61g1K0dERaS.jpg",
         },
       },
       {
         book: {
           id: 6,
           title: "Python Data Science Handbook",
+          photo:
+            "https://kbimages1-a.akamaihd.net/70caf89d-95d8-42b1-ae2d-491e46729278/1200/1200/False/python-data-science-handbook.jpg",
         },
       },
       {
         book: {
           id: 9,
           title: "Think Java",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/81rh4tPZHqL.jpg",
         },
       },
     ],
@@ -119,6 +143,8 @@ const data = [
         book: {
           id: 5,
           title: "Think Stats",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/71dSxAe7EjL.jpg",
         },
       },
     ],
@@ -126,5 +152,4 @@ const data = [
     updated: null,
   },
 ];
-
 export default data;

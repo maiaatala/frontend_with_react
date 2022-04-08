@@ -1,3 +1,5 @@
+//! VARIABLES
+
 $background: #d9d9d9;
 $foreground: #ffffff;
 $backgroundDark: #747474;
@@ -17,12 +19,25 @@ $bookLHeight: 200px;
 $defaultMargin: 1.25rem;
 $defaultRadius: 10px;
 
+//! FUNCTIONS
+
 @mixin Flextemplate {
   display: flex;
   max-width: $maxWidth;
   align-items: center;
   margin: 0 auto;
 }
+
+@mixin BodyTemplate {
+  min-width: $minWidth;
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding-top: $defaultMargin/2;
+  background-color: $foreground;
+  border-radius: $defaultRadius $defaultRadius 0 0;
+}
+
+//! GLOBAL STYLES
 
 *,
 ::after,
@@ -93,6 +108,8 @@ select {
   cursor: pointer;
 }
 
+//! HEADER
+
 .aboutBar {
   @include Flextemplate();
   justify-content: space-between;
@@ -100,6 +117,7 @@ select {
   height: $bar1Height;
   padding: 0 $defaultMargin/2;
   min-width: 460px;
+  border-radius: 0 0 $defaultRadius $defaultRadius;
 
   .gitHubLink {
     display: flex;
@@ -161,13 +179,6 @@ select {
       }
     }
 
-    input {
-      height: inherit;
-      width: 293px;
-      min-width: 100px;
-      border: 0;
-    }
-
     button {
       height: inherit;
       width: 35px;
@@ -180,16 +191,20 @@ select {
         width: 17px;
       }
     }
+    input {
+      height: inherit;
+      width: 293px;
+      min-width: 100px;
+      border: 0;
+      padding-left: $defaultMargin/2;
+    }
   }
 }
 
+//! HOME PAGE
+
 .mainPage {
-  min-width: $minWidth;
-  max-width: $maxWidth;
-  margin: 0 auto;
-  padding-top: $defaultMargin/2;
-  background-color: $foreground;
-  border-radius: $defaultRadius $defaultRadius 0 0;
+  @include BodyTemplate();
 
   .listFragment:nth-child(even) {
     background-color: $greenMuted;
@@ -199,41 +214,77 @@ select {
     display: block;
     max-width: inherit;
     min-width: inherit;
-    // margin: $defaultMargin;
+    margin: $defaultMargin;
     padding: $defaultMargin/2 $defaultMargin;
 
     h3 {
       font-weight: 400;
     }
-
-    .categorySlider {
-      @include Flextemplate();
-      justify-content: space-between;
-
-      .sliderBtn {
-        background-color: transparent;
-        border: 0;
-
-        svg {
-          height: 22px;
-          width: auto;
-        }
-      }
-
-      .booksSliderList {
-        @include Flextemplate();
-        padding: 0 $defaultMargin;
-        flex-grow: 1;
-        justify-items: flex-start;
-        flex-direction: row;
-        gap: $defaultMargin;
-        overflow: hidden;
-      }
+    img {
+      max-width: 180px !important;
+      height: 200px !important;
+      object-fit: cover;
     }
+
+    // .categorySlider {
+    //   @include Flextemplate();
+    //   justify-content: space-between;
+
+    //   .sliderBtn {
+    //     background-color: transparent;
+    //     border: 0;
+
+    //     svg {
+    //       height: 22px;
+    //       width: auto;
+    //     }
+    //   }
+
+    //   .booksSliderList {
+    //     @include Flextemplate();
+    //     padding: $defaultMargin/2 $defaultMargin;
+    //     flex-grow: 1;
+    //     justify-items: flex-start;
+    //     flex-direction: row;
+    //     gap: $defaultMargin;
+    //     overflow-y: hidden;
+    //     overflow-x: auto;
+    //     scroll-behavior: smooth;
+    //     transform: transition 450ms;
+
+    //     .booksImg {
+    //       flex-grow: 0;
+    //       flex: none;
+    //     }
+    //     .booksImg:hover {
+    //       transform: scale(1.1);
+    //     }
+    //   }
+    // }
   }
 }
 
-.booksImg {
-  height: 200px;
-  max-width: 200px;
+//! SINGLE BOOK PAGE
+.singleBookPage {
+  @include BodyTemplate();
+  padding: $defaultMargin $defaultMargin * 1.5;
+
+  .bookView {
+    gap: $defaultMargin;
+    @include Flextemplate();
+    align-items: flex-start;
+
+    img {
+      object-fit: cover;
+      height: 400px;
+      max-width: 300px;
+    }
+  }
+  .textInfo {
+    padding-top: $defaultMargin;
+
+    p {
+      //? HOW TO ALIGN IT TO THE RIGHT!?!?!
+    }
+  }
 }

@@ -34,7 +34,7 @@ const MainHeader = () => {
   return (
     <div className="mainHeader">
       <Link to="/">
-        <BooksLogo id="logo" />{" "}
+        <BooksLogo id="logo" />
       </Link>
       <Link to="/">
         <p style={{ minWidth: "67.1px" }}> Na Sorte</p>

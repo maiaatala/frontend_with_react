@@ -90,6 +90,7 @@ select {
   height: 30px;
   padding: 0 0.625rem;
   min-width: 460px;
+  border-radius: 0 0 10px 10px;
 }
 
 .aboutBar .gitHubLink {
@@ -167,13 +168,6 @@ select {
   min-width: inherit;
 }
 
-.mainHeader .searchMenu input {
-  height: inherit;
-  width: 293px;
-  min-width: 100px;
-  border: 0;
-}
-
 .mainHeader .searchMenu button {
   height: inherit;
   width: 35px;
@@ -185,6 +179,14 @@ select {
 .mainHeader .searchMenu button svg {
   height: 17px;
   width: 17px;
+}
+
+.mainHeader .searchMenu input {
+  height: inherit;
+  width: 293px;
+  min-width: 100px;
+  border: 0;
+  padding-left: 0.625rem;
 }
 
 .mainPage {
@@ -204,6 +206,7 @@ select {
   display: block;
   max-width: inherit;
   min-width: inherit;
+  margin: 1.25rem;
   padding: 0.625rem 1.25rem;
 }
 
@@ -211,54 +214,46 @@ select {
   font-weight: 400;
 }
 
-.mainPage .listFragment .categorySlider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.mainPage .listFragment img {
+  max-width: 180px !important;
+  height: 200px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.singleBookPage {
+  min-width: 480px;
   max-width: 1060px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding-top: 0.625rem;
+  background-color: #ffffff;
+  border-radius: 10px 10px 0 0;
+  padding: 1.25rem 1.875rem;
 }
 
-.mainPage .listFragment .categorySlider .sliderBtn {
-  background-color: transparent;
-  border: 0;
-}
-
-.mainPage .listFragment .categorySlider .sliderBtn svg {
-  height: 22px;
-  width: auto;
-}
-
-.mainPage .listFragment .categorySlider .booksSliderList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1060px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  justify-items: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.singleBookPage .bookView {
   gap: 1.25rem;
-  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1060px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.booksImg {
-  height: 200px;
-  max-width: 200px;
+.singleBookPage .bookView img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 400px;
+  max-width: 300px;
+}
+
+.singleBookPage .textInfo {
+  padding-top: 1.25rem;
 }
 /*# sourceMappingURL=index.css.map */

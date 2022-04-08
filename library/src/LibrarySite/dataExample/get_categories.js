@@ -27,6 +27,54 @@ const data = [
             "https://images-na.ssl-images-amazon.com/images/I/81rh4tPZHqL.jpg",
         },
       },
+      {
+        book: {
+          id: 31,
+          title: "Think Python",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/61g1K0dERaS.jpg",
+        },
+      },
+      {
+        book: {
+          id: 61,
+          title: "Python Data Science Handbook",
+          photo:
+            "https://kbimages1-a.akamaihd.net/70caf89d-95d8-42b1-ae2d-491e46729278/1200/1200/False/python-data-science-handbook.jpg",
+        },
+      },
+      {
+        book: {
+          id: 91,
+          title: "Think Java",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/81rh4tPZHqL.jpg",
+        },
+      },
+      {
+        book: {
+          id: 32,
+          title: "Think Python",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/61g1K0dERaS.jpg",
+        },
+      },
+      {
+        book: {
+          id: 62,
+          title: "Python Data Science Handbook",
+          photo:
+            "https://kbimages1-a.akamaihd.net/70caf89d-95d8-42b1-ae2d-491e46729278/1200/1200/False/python-data-science-handbook.jpg",
+        },
+      },
+      {
+        book: {
+          id: 92,
+          title: "Think Java",
+          photo:
+            "https://images-na.ssl-images-amazon.com/images/I/81rh4tPZHqL.jpg",
+        },
+      },
     ],
     created: "2021-12-03T20:21:20.756150",
     updated: null,
@@ -148,6 +196,13 @@ const data = [
         },
       },
     ],
+    created: "2021-12-03T22:16:48.738799",
+    updated: null,
+  },
+  {
+    id: 8,
+    name: "Test",
+    categories_books: [],
     created: "2021-12-03T22:16:48.738799",
     updated: null,
   },

@@ -32,7 +32,7 @@ const data = [
           id: 31,
           title: "Think Python",
           photo:
-            "https://images-na.ssl-images-amazon.com/images/I/61g1K0dERaS.jpg",
+            "https://images.pexels.com/photos/1535162/pexels-photo-1535162.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         },
       },
       {
@@ -40,15 +40,14 @@ const data = [
           id: 61,
           title: "Python Data Science Handbook",
           photo:
-            "https://kbimages1-a.akamaihd.net/70caf89d-95d8-42b1-ae2d-491e46729278/1200/1200/False/python-data-science-handbook.jpg",
+            "https://miro.medium.com/max/1500/1*Eb_0OvtcxJXHZ7-IOoBsaQ.png",
         },
       },
       {
         book: {
           id: 91,
           title: "Think Java",
-          photo:
-            "https://images-na.ssl-images-amazon.com/images/I/81rh4tPZHqL.jpg",
+          photo: "https://wallpaperaccess.com/full/1682077.png",
         },
       },
       {
@@ -56,7 +55,7 @@ const data = [
           id: 32,
           title: "Think Python",
           photo:
-            "https://images-na.ssl-images-amazon.com/images/I/61g1K0dERaS.jpg",
+            "https://www.nba.com/resources/static/team/v2/nets/2019-20/fans/wallpapers/assets/AllStar_Wallpapers_KD.jpg",
         },
       },
       {
@@ -64,7 +63,7 @@ const data = [
           id: 62,
           title: "Python Data Science Handbook",
           photo:
-            "https://kbimages1-a.akamaihd.net/70caf89d-95d8-42b1-ae2d-491e46729278/1200/1200/False/python-data-science-handbook.jpg",
+            "https://c8.alamy.com/comp/KCEE0R/multicolored-motion-element-on-black-background-mobile-wallpaper-KCEE0R.jpg",
         },
       },
       {
@@ -72,7 +71,7 @@ const data = [
           id: 92,
           title: "Think Java",
           photo:
-            "https://images-na.ssl-images-amazon.com/images/I/81rh4tPZHqL.jpg",
+            "https://srcwap.com/wp-content/uploads/2021/08/MinimalSunsetMobileWallpaper.jpg",
         },
       },
     ],

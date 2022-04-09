@@ -12,6 +12,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
+// import required modules
+import { FreeMode, Pagination } from "swiper";
 
 // get category info url
 const url_cat = "http://127.0.0.1:8000/categories";
@@ -60,21 +64,29 @@ const CatSliders = ({ data }) => {
   //returns an slider for the categories
   return (
     <>
-      {data.map((category) => {
-        return (
-          <article className="listFragment" key={category.id}>
-            <h3>{category.name}</h3>
-            <div id={category.id}>
-              <SwiperBooks books={category.categories_books} />
-            </div>
-          </article>
-        );
-      })}
+      <article className="listFragment" key={data[0].id}>
+        <h3>{data[0].name}</h3>
+        <div>
+          <SwiperBasic books={data[0].categories_books} />
+        </div>
+      </article>
+      <article className="listFragment" key={data[0].id}>
+        <h3>{data[0].name}</h3>
+        <div>
+          <SwiperPaginationDynamic books={data[0].categories_books} />
+        </div>
+      </article>
+      <article className="listFragment" key={data[0].id}>
+        <h3>{data[0].name}</h3>
+        <div>
+          <SwiperFreemode books={data[0].categories_books} />
+        </div>
+      </article>
     </>
   );
 };
 
-const SwiperBooks = ({ books }) => {
+const SwiperBasic = ({ books }) => {
   const navigate = useNavigate();
   const space = useRef(null);
 
@@ -82,8 +94,6 @@ const SwiperBooks = ({ books }) => {
     console.log(id);
     navigate(`/books/${id}`);
   };
-
-  console.log(space.current);
 
   return (
     <Swiper
@@ -94,6 +104,7 @@ const SwiperBooks = ({ books }) => {
       breakpoints={{
         400: {
           slidesPerView: 2,
+          spaceBetween: 10,
         },
         580: {
           slidesPerView: 3,
@@ -112,7 +123,7 @@ const SwiperBooks = ({ books }) => {
       {books.map((book) => {
         // console.log(book);
         return (
-          <SwiperSlide key={book.book.id}>
+          <SwiperSlide width={"auto"} key={book.book.id}>
             <img
               src={book.book.photo}
               alt={book.book.title}
@@ -123,5 +134,57 @@ const SwiperBooks = ({ books }) => {
         );
       })}
     </Swiper>
+  );
+};
+
+const SwiperPaginationDynamic = ({ books }) => {
+  return (
+    <>
+      <Swiper
+        slidesPerView={"auto"}
+        centeredSlides={true}
+        spaceBetween={20}
+        pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]}
+      >
+        {books.map((book) => {
+          // console.log(book);
+          return (
+            <SwiperSlide key={book.book.id}>
+              <img src={book.book.photo} alt={book.book.title} />
+              {/* {book.book.title} */}
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </>
+  );
+};
+
+const SwiperFreemode = ({ books }) => {
+  return (
+    <>
+      <Swiper
+        slidesPerView={"3"}
+        freeMode={true}
+        spaceBetween={20}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+      >
+        {books.map((book) => {
+          // console.log(book);
+          return (
+            <SwiperSlide key={book.book.id}>
+              <img src={book.book.photo} alt={book.book.title} />
+              {/* {book.book.title} */}
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </>
   );
 };
